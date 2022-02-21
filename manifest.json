@@ -31,7 +31,8 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "profile-switcher-ff@nd.ax"
+      "id": "profile-switcher-ff@nd.ax",
+      "strict_min_version": "57.0a1"
     }
   }
 }

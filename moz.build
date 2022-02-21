@@ -1,0 +1,269 @@
+DEFINES["MOZ_APP_VERSION"] = CONFIG["MOZ_APP_VERSION"]
+DEFINES["MOZ_APP_MAXVERSION"] = CONFIG["MOZ_APP_MAXVERSION"]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"] += [
+    "manifest.json",
+    "moz.build",
+    "sign.sh",
+    "web-ext-config.js",
+]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"]["branding"] += [
+    "branding/amo_button.png",
+    "branding/icon.afdesign",
+    "branding/manager_add_screenshot.png",
+    "branding/manager_home_screenshot.png",
+    "branding/popup_screenshot.png",
+]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"]["img"] += [
+    "img/firefox.svg",
+    "img/icon.svg",
+    "img/settings-gray.svg",
+]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"]["img"]["avatars"] += [
+    "img/avatars/avatarlist.txt",
+    "img/avatars/gen-avatarlist.sh",
+    "img/avatars/resize-old.sh",
+]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"]["img"]["avatars"]["modern_cros_100"] += [
+    "img/avatars/modern_cros_100/avatar_anonymous.png",
+    "img/avatars/modern_cros_100/avatar_bee.png",
+    "img/avatars/modern_cros_100/avatar_bicycle.png",
+    "img/avatars/modern_cros_100/avatar_bokeh.png",
+    "img/avatars/modern_cros_100/avatar_briefcase.png",
+    "img/avatars/modern_cros_100/avatar_cat.png",
+    "img/avatars/modern_cros_100/avatar_chess.png",
+    "img/avatars/modern_cros_100/avatar_circles.png",
+    "img/avatars/modern_cros_100/avatar_cloud.png",
+    "img/avatars/modern_cros_100/avatar_coffee.png",
+    "img/avatars/modern_cros_100/avatar_cupcake.png",
+    "img/avatars/modern_cros_100/avatar_day.png",
+    "img/avatars/modern_cros_100/avatar_dragonfly.png",
+    "img/avatars/modern_cros_100/avatar_flower.png",
+    "img/avatars/modern_cros_100/avatar_frog.png",
+    "img/avatars/modern_cros_100/avatar_ganzania.png",
+    "img/avatars/modern_cros_100/avatar_globe.png",
+    "img/avatars/modern_cros_100/avatar_hotair.png",
+    "img/avatars/modern_cros_100/avatar_jackrussellterrier.png",
+    "img/avatars/modern_cros_100/avatar_jellyfish.png",
+    "img/avatars/modern_cros_100/avatar_kiwi.png",
+    "img/avatars/modern_cros_100/avatar_ladybug.png",  
+    "img/avatars/modern_cros_100/avatar_leaf.png",
+    "img/avatars/modern_cros_100/avatar_night.png",
+    "img/avatars/modern_cros_100/avatar_penguin.png",
+    "img/avatars/modern_cros_100/avatar_plane.png",
+    "img/avatars/modern_cros_100/avatar_rainbowfish.png",
+    "img/avatars/modern_cros_100/avatar_recordplayer.png",
+    "img/avatars/modern_cros_100/avatar_robot_body.png",
+    "img/avatars/modern_cros_100/avatar_robot_head.png",
+    "img/avatars/modern_cros_100/avatar_toolbox.png",
+    "img/avatars/modern_cros_100/avatar_upsidedown.png",
+    "img/avatars/modern_cros_100/avatar_user_color.png",
+    "img/avatars/modern_cros_100/avatar_user_enterprise.png",
+    "img/avatars/modern_cros_100/SOURCE.txt",
+]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"]["img"]["avatars"]["modern_cros_200"]["abstract"] += [
+    "img/avatars/modern_cros_200/abstract/avatar_avocado.png",
+    "img/avatars/modern_cros_200/abstract/avatar_cappuccino.png",
+    "img/avatars/modern_cros_200/abstract/avatar_icecream.png",
+    "img/avatars/modern_cros_200/abstract/avatar_icewater.png",
+    "img/avatars/modern_cros_200/abstract/avatar_melon.png",
+    "img/avatars/modern_cros_200/abstract/avatar_onigiri.png",
+    "img/avatars/modern_cros_200/abstract/avatar_pizza.png",
+    "img/avatars/modern_cros_200/abstract/avatar_sandwich.png",
+]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"]["img"]["avatars"]["modern_cros_200"]["geo"] += [
+    "img/avatars/modern_cros_200/geo/avatar_geo1.png",
+    "img/avatars/modern_cros_200/geo/avatar_geo2.png",
+    "img/avatars/modern_cros_200/geo/avatar_geo3.png",
+    "img/avatars/modern_cros_200/geo/avatar_geo4.png",
+    "img/avatars/modern_cros_200/geo/avatar_geo5.png",
+]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"]["img"]["avatars"]["modern_cros_200"]["illustration"] += [
+    "img/avatars/modern_cros_200/illustration/avatar_basketball.png",
+    "img/avatars/modern_cros_200/illustration/avatar_bike.png",
+    "img/avatars/modern_cros_200/illustration/avatar_bird.png",
+    "img/avatars/modern_cros_200/illustration/avatar_cheese.png",
+    "img/avatars/modern_cros_200/illustration/avatar_football.png",
+    "img/avatars/modern_cros_200/illustration/avatar_ramen.png",
+    "img/avatars/modern_cros_200/illustration/avatar_sunglasses.png",
+    "img/avatars/modern_cros_200/illustration/avatar_sushi.png",
+    "img/avatars/modern_cros_200/illustration/avatar_tamagotchi.png",
+    "img/avatars/modern_cros_200/illustration/avatar_vinyl.png",
+]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"]["img"]["avatars"]["modern_cros_200"]["origami"] += [
+    "img/avatars/modern_cros_200/origami/avatar_butterflies.png",
+    "img/avatars/modern_cros_200/origami/avatar_cat.png",
+    "img/avatars/modern_cros_200/origami/avatar_corgi.png",
+    "img/avatars/modern_cros_200/origami/avatar_dragon.png",
+    "img/avatars/modern_cros_200/origami/avatar_elephant.png",
+    "img/avatars/modern_cros_200/origami/avatar_fox.png",
+    "img/avatars/modern_cros_200/origami/avatar_monkey.png",
+    "img/avatars/modern_cros_200/origami/avatar_panda.png",
+    "img/avatars/modern_cros_200/origami/avatar_penguin.png",
+    "img/avatars/modern_cros_200/origami/avatar_pinkbutterfly.png",
+    "img/avatars/modern_cros_200/origami/avatar_rabbit.png",
+    "img/avatars/modern_cros_200/origami/avatar_redbutterfly.png",
+    "img/avatars/modern_cros_200/origami/avatar_snail.png",
+    "img/avatars/modern_cros_200/origami/avatar_unicorn.png",
+]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"]["img"]["avatars"]["modern_cros_200_original"]["abstract"] += [
+    "img/avatars/modern_cros_200_original/abstract/avatar_avocado.png",
+    "img/avatars/modern_cros_200_original/abstract/avatar_cappuccino.png",
+    "img/avatars/modern_cros_200_original/abstract/avatar_icecream.png",
+    "img/avatars/modern_cros_200_original/abstract/avatar_icewater.png",
+    "img/avatars/modern_cros_200_original/abstract/avatar_melon.png",
+    "img/avatars/modern_cros_200_original/abstract/avatar_onigiri.png",
+    "img/avatars/modern_cros_200_original/abstract/avatar_pizza.png",
+    "img/avatars/modern_cros_200_original/abstract/avatar_sandwich.png",
+]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"]["img"]["avatars"]["modern_cros_200_original"]["geo"] += [
+    "img/avatars/modern_cros_200_original/geo/avatar_geo1.png",
+    "img/avatars/modern_cros_200_original/geo/avatar_geo2.png",
+    "img/avatars/modern_cros_200_original/geo/avatar_geo3.png",
+    "img/avatars/modern_cros_200_original/geo/avatar_geo4.png",
+    "img/avatars/modern_cros_200_original/geo/avatar_geo5.png",
+]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"]["img"]["avatars"]["modern_cros_200_original"]["illustration"] += [
+    "img/avatars/modern_cros_200_original/illustration/avatar_basketball.png",
+    "img/avatars/modern_cros_200_original/illustration/avatar_bike.png",
+    "img/avatars/modern_cros_200_original/illustration/avatar_bird.png",
+    "img/avatars/modern_cros_200_original/illustration/avatar_cheese.png",
+    "img/avatars/modern_cros_200_original/illustration/avatar_football.png",
+    "img/avatars/modern_cros_200_original/illustration/avatar_ramen.png",
+    "img/avatars/modern_cros_200_original/illustration/avatar_sunglasses.png",
+    "img/avatars/modern_cros_200_original/illustration/avatar_sushi.png",
+    "img/avatars/modern_cros_200_original/illustration/avatar_tamagotchi.png",
+    "img/avatars/modern_cros_200_original/illustration/avatar_vinyl.png",
+]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"]["img"]["avatars"]["modern_cros_200_original"]["origami"] += [
+    "img/avatars/modern_cros_200_original/origami/avatar_butterflies.png",
+    "img/avatars/modern_cros_200_original/origami/avatar_cat.png",
+    "img/avatars/modern_cros_200_original/origami/avatar_corgi.png",
+    "img/avatars/modern_cros_200_original/origami/avatar_dragon.png",
+    "img/avatars/modern_cros_200_original/origami/avatar_elephant.png",
+    "img/avatars/modern_cros_200_original/origami/avatar_fox.png",
+    "img/avatars/modern_cros_200_original/origami/avatar_monkey.png",
+    "img/avatars/modern_cros_200_original/origami/avatar_panda.png",
+    "img/avatars/modern_cros_200_original/origami/avatar_penguin.png",
+    "img/avatars/modern_cros_200_original/origami/avatar_pinkbutterfly.png",
+    "img/avatars/modern_cros_200_original/origami/avatar_rabbit.png",
+    "img/avatars/modern_cros_200_original/origami/avatar_redbutterfly.png",
+    "img/avatars/modern_cros_200_original/origami/avatar_snail.png",
+    "img/avatars/modern_cros_200_original/origami/avatar_unicorn.png",
+]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"]["img"]["avatars"]["old"] += [
+    "img/avatars/old/profile_avatar_alien.png",
+    "img/avatars/old/profile_avatar_awesome.png",
+    "img/avatars/old/profile_avatar_burger.png",
+    "img/avatars/old/profile_avatar_businessman.png",
+    "img/avatars/old/profile_avatar_cat.png",
+    "img/avatars/old/profile_avatar_cupcake.png",
+    "img/avatars/old/profile_avatar_dog.png",
+    "img/avatars/old/profile_avatar_flower.png",
+    "img/avatars/old/profile_avatar_generic.png",
+    "img/avatars/old/profile_avatar_generic_aqua.png",
+    "img/avatars/old/profile_avatar_generic_blue.png",
+    "img/avatars/old/profile_avatar_generic_green.png",
+    "img/avatars/old/profile_avatar_generic_orange.png",
+    "img/avatars/old/profile_avatar_generic_purple.png",
+    "img/avatars/old/profile_avatar_generic_red.png",
+    "img/avatars/old/profile_avatar_generic_yellow.png",
+    "img/avatars/old/profile_avatar_horse.png",
+    "img/avatars/old/profile_avatar_margarita.png",
+    "img/avatars/old/profile_avatar_ninja.png",
+    "img/avatars/old/profile_avatar_note.png",
+    "img/avatars/old/profile_avatar_pizza.png",
+    "img/avatars/old/profile_avatar_secret_agent.png",
+    "img/avatars/old/profile_avatar_soccer.png",
+    "img/avatars/old/profile_avatar_sun_cloud.png",
+    "img/avatars/old/profile_avatar_superhero.png",
+    "img/avatars/old/profile_avatar_volley_ball.png",
+]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"]["img"]["avatars"]["old_original"] += [
+    "img/avatars/old_original/profile_avatar_alien.png",
+    "img/avatars/old_original/profile_avatar_awesome.png",
+    "img/avatars/old_original/profile_avatar_burger.png",
+    "img/avatars/old_original/profile_avatar_businessman.png",
+    "img/avatars/old_original/profile_avatar_cat.png",
+    "img/avatars/old_original/profile_avatar_cupcake.png",
+    "img/avatars/old_original/profile_avatar_dog.png",
+    "img/avatars/old_original/profile_avatar_flower.png",
+    "img/avatars/old_original/profile_avatar_generic.png",
+    "img/avatars/old_original/profile_avatar_generic_aqua.png",
+    "img/avatars/old_original/profile_avatar_generic_blue.png",
+    "img/avatars/old_original/profile_avatar_generic_green.png",
+    "img/avatars/old_original/profile_avatar_generic_orange.png",
+    "img/avatars/old_original/profile_avatar_generic_purple.png",
+    "img/avatars/old_original/profile_avatar_generic_red.png",
+    "img/avatars/old_original/profile_avatar_generic_yellow.png",
+    "img/avatars/old_original/profile_avatar_horse.png",
+    "img/avatars/old_original/profile_avatar_margarita.png",
+    "img/avatars/old_original/profile_avatar_ninja.png",
+    "img/avatars/old_original/profile_avatar_note.png",
+    "img/avatars/old_original/profile_avatar_pizza.png",
+    "img/avatars/old_original/profile_avatar_secret_agent.png",
+    "img/avatars/old_original/profile_avatar_soccer.png",
+    "img/avatars/old_original/profile_avatar_sun_cloud.png",
+    "img/avatars/old_original/profile_avatar_superhero.png",
+    "img/avatars/old_original/profile_avatar_volley_ball.png",
+]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"]["js"] += [
+    "js/common.css",
+    "js/common.js",
+    "js/native.js",
+]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"]["js"]["background"] += [
+    "js/background/background.js",
+    "js/background/index.html",
+]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"]["js"]["lib"] += [
+    "js/lib/compare-versions.min.js",
+    "js/lib/fuse.min.js",
+    "js/lib/marked.min.js",
+]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"]["js"]["manager"] += [
+    "js/manager/index.html",
+    "js/manager/manager.js",
+]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"]["js"]["popup"] += [
+    "js/popup/index.html",
+    "js/popup/popup.js",
+]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"]["js"]["setup"] += [
+    "js/setup/setup.html",
+    "js/setup/setup.js",
+]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"]["js"]["update"] += [
+    "js/update/update.css",
+    "js/update/update.html",
+    "js/update/update.js",
+]
+
+FINAL_TARGET_FILES.features["profile-switcher-ff@nd.ax"]["js"]["winfocus"] += [
+    "js/winfocus/winfocus.html",
+    "js/winfocus/winfocus.js"
+]
+
+with Files("**"):
+    BUG_COMPONENT = ("Firefox", "Security")
